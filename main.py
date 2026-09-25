@@ -2269,7 +2269,7 @@ def main(page: ft.Page):
     def create_game_card(title, desc, icon_data, bg_color):
         if "Blackjack" in title:
             click_action = lambda e: show_room_lobby_view("Blackjack Multiplayer")
-        elif "Penta Seven" in title:
+        elif "Ngũ Quý" in title or "Penta Seven" in title:
             click_action = lambda e: show_penta_seven_slot_view()
         elif "Bảng Xếp Hạng" in title:
             click_action = lambda e: show_leaderboard_view()
