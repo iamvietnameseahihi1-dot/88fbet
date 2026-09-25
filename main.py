@@ -2389,7 +2389,10 @@ def main(page: ft.Page):
 
     show_login_view()
 
+import flet as ft
+import os
+
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 8080))
-    ft.app(target=main, port=port, host="0.0.0.0")
+    ft.run(target=main, port=port, host="0.0.0.0")
