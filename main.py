@@ -2395,4 +2395,4 @@ import os
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 8080))
-    ft.run(target=main, port=port, host="0.0.0.0")
+    ft.app(target=main, port=port, host="0.0.0.0")
