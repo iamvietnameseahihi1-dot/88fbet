@@ -359,7 +359,8 @@ def fetch_all_users_for_leaderboard():
 # MAIN APPLICATION
 # ============================================================
 def main(page: ft.Page):
-    page.title = "Cổng Game Giải Trí Premium"
+    page.title = "88fbet Nhà Cái Trời Âu"
+    page.favicon = "https://github.com/iamvietnameseahihi1-dot/88fbet/blob/main/logo.png?raw=true"
     page.theme_mode = ft.ThemeMode.DARK
     page.window.width = 1100
     page.window.height = 750
