@@ -1591,7 +1591,7 @@ def main(page: ft.Page):
                         jackpot_pool = 300000000
                         spin_win += jackpot_won
                         jackpot_hit_count += 1
-                        msg_ann = f"🎉 CHÚC MỪNG [{current_user['username']}] NỔ HŨ NGŨ QUÝ 7 NHẬN {format_currency(jackpot_won)} XU!"
+                        msg_ann = f"🎉 CHÚC MỪNG [{current_user['username']}] NỔ HŨ 77777 NHẬN {format_currency(jackpot_won)} XU!"
                         update_system_config({"marquee_message": {"stringValue": msg_ann}})
 
                 if count_8 > 0 and spin_win > 0:
@@ -1637,7 +1637,7 @@ def main(page: ft.Page):
         slot_layout = ft.Column([
             ft.Row([
                 ft.IconButton(icons.ARROW_BACK, tooltip="Quay lại", on_click=lambda e: show_dashboard_view()),
-                ft.Text("🎰 NGŨ QUÝ 7 (77777)", size=18, weight=ft.FontWeight.BOLD, color=colors.AMBER_300),
+                ft.Text("🎰 NGŨ QUÝ 7 (CƯỢC CAO THẮNG LỚN)", size=18, weight=ft.FontWeight.BOLD, color=colors.AMBER_300),
                 ft.Container(expand=True),
                 ft.Text(f"💰 Số dư: {format_currency(current_user['xuvang'])} Xu", size=14, color=colors.GREEN_400, weight=ft.FontWeight.BOLD)
             ]),
@@ -2371,7 +2371,7 @@ def main(page: ft.Page):
             spacing=15,
             run_spacing=15,
             controls=[
-                create_game_card("🎰 NGŨ QUÝ 7", "Cược cao thắng lớn", icons.CASINO, colors.PURPLE_700),
+                create_game_card("🎰 Ngũ Quý 7", "Cược Cao Thắng Lớn", icons.CASINO, colors.PURPLE_700),
                 create_game_card("🎰 Vòng Quay May Mắn", "3 Mức quay riêng biệt & Nổ Hũ Jackpot", icons.AUTO_MODE, colors.PURPLE_600),
                 create_game_card("♠️ Blackjack Realtime", "Xì dách Đa người chơi Realtime", icons.STYLE, colors.BLUE_800),
                 create_game_card("🐍 Rắn Săn Mồi (Farm)", "Game Farm Xu Vàng (Premix x300% XP)", icons.VIDEOGAME_ASSET, colors.GREEN_700),
