@@ -524,8 +524,8 @@ def main(page: ft.Page):
         page.clean()
         login_box = ft.Container(
             content=ft.Column([
-                ft.Text("🎮 GAMING ENTERTAINMENT", size=26, weight=ft.FontWeight.BOLD, color=colors.BLUE_200),
-                ft.Text("Hệ thống Game Giải Trí Premium", size=14, color=colors.GREY_400),
+                ft.Text("🎮 88FBET ENTERTAINMENT", size=26, weight=ft.FontWeight.BOLD, color=colors.BLUE_200),
+                ft.Text("88FBET Nhà Cái Đến Từ Châu Âu", size=14, color=colors.GREY_400),
                 ft.Divider(height=20, color=colors.TRANSPARENT),
                 user_input,
                 pass_input,
@@ -711,7 +711,7 @@ def main(page: ft.Page):
         current_user = get_user_doc(current_user["username"])
 
         store_status_msg = ft.Text("", color=colors.GREEN_400)
-        code_input = ft.TextField(label="Nhập mã code (VD: 88fbet-xxxx hoặc premix-xxxx)", width=320)
+        code_input = ft.TextField(label="Nhập mã quy đổi", width=320)
         
         gift_user_input = ft.TextField(label="Username người nhận", width=200)
         gift_type_dropdown = ft.Dropdown(
@@ -1517,7 +1517,7 @@ def main(page: ft.Page):
         )
 
         jackpot_text = ft.Text(f"🔥 QUỸ HŨ JACKPOT: {format_currency(jackpot_pool)} Xu Vàng", size=18, weight=ft.FontWeight.BOLD, color=colors.AMBER_300)
-        slot_status = ft.Text("Tỷ lệ quay chuẩn Slot Game: 50% Trắng | 20% Lỗ ít | 30% Lời", size=14, color=colors.GREY_300)
+        slot_status = ft.Text("Cược Cao Thắng Lớn", size=14, color=colors.GREY_300)
         win_display = ft.Text("Thắng: 0 Xu", size=18, weight=ft.FontWeight.BOLD, color=colors.GREEN_400)
 
         symbols_list = ["7️⃣", "💎", "👑", "🍒", "🔔", "🍋", "🍇"]
@@ -1590,7 +1590,7 @@ def main(page: ft.Page):
                         jackpot_pool = 300000000
                         spin_win += jackpot_won
                         jackpot_hit_count += 1
-                        msg_ann = f"🎉 CHÚC MỪNG [{current_user['username']}] NỔ HŨ PENTA SEVEN NHẬN {format_currency(jackpot_won)} XU!"
+                        msg_ann = f"🎉 CHÚC MỪNG [{current_user['username']}] NỔ HŨ NGŨ QUÝ 7 NHẬN {format_currency(jackpot_won)} XU!"
                         update_system_config({"marquee_message": {"stringValue": msg_ann}})
 
                 if count_8 > 0 and spin_win > 0:
@@ -1636,7 +1636,7 @@ def main(page: ft.Page):
         slot_layout = ft.Column([
             ft.Row([
                 ft.IconButton(icons.ARROW_BACK, tooltip="Quay lại", on_click=lambda e: show_dashboard_view()),
-                ft.Text("🎰 PENTA SEVEN 5x5 (NERFED RATIO 5:2:3)", size=18, weight=ft.FontWeight.BOLD, color=colors.AMBER_300),
+                ft.Text("🎰 NGŨ QUÝ 7 (77777)", size=18, weight=ft.FontWeight.BOLD, color=colors.AMBER_300),
                 ft.Container(expand=True),
                 ft.Text(f"💰 Số dư: {format_currency(current_user['xuvang'])} Xu", size=14, color=colors.GREEN_400, weight=ft.FontWeight.BOLD)
             ]),
@@ -2370,7 +2370,7 @@ def main(page: ft.Page):
             spacing=15,
             run_spacing=15,
             controls=[
-                create_game_card("🎰 Penta Seven 5x5", "Slot Tiering (Nerfed 5:2:3)", icons.CASINO, colors.PURPLE_700),
+                create_game_card("🎰 NGŨ QUÝ 7", "Cược cao thắng lớn", icons.CASINO, colors.PURPLE_700),
                 create_game_card("🎰 Vòng Quay May Mắn", "3 Mức quay riêng biệt & Nổ Hũ Jackpot", icons.AUTO_MODE, colors.PURPLE_600),
                 create_game_card("♠️ Blackjack Realtime", "Xì dách Đa người chơi Realtime", icons.STYLE, colors.BLUE_800),
                 create_game_card("🐍 Rắn Săn Mồi (Farm)", "Game Farm Xu Vàng (Premix x300% XP)", icons.VIDEOGAME_ASSET, colors.GREEN_700),
